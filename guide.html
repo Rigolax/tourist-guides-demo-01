@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Гид — Кубачи</title>
+    <meta
+      name="description"
+      content="Профиль местного гида по Кубачи: языки, районы/маршруты, форматы и контакты."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#141210" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-guide">
+    <header class="guide-page-header">
+      <div class="container guide-page-header-inner">
+        <a href="index.html#guides" class="guide-back-link">
+          <span class="guide-back-icon" aria-hidden="true">←</span>
+          К списку гидов
+        </a>
+        <a href="index.html" class="guide-page-logo" aria-label="Кубачи — на главную">
+          <span class="guide-page-logo-text">КУБАЧИ</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="container guide-page-main">
+      <div id="loading" class="guide-state guide-state--loading">
+        <div class="guide-spinner" aria-hidden="true"></div>
+        <p>Загрузка профиля…</p>
+      </div>
+
+      <div id="error" class="guide-state guide-state--error" style="display: none" role="alert"></div>
+
+      <article id="content" class="guide-profile card guide-profile-card" style="display: none">
+        <div class="guide-profile-layout">
+          <div class="guide-profile-aside">
+            <div class="guide-profile-photo-frame">
+              <img id="photo" class="guide-profile-photo" src="" alt="" />
+            </div>
+          </div>
+
+          <div class="guide-profile-main">
+            <p class="guide-profile-eyebrow">Местный гид</p>
+            <h1 id="name" class="guide-profile-name"></h1>
+            <p id="bio" class="guide-profile-bio"></p>
+
+            <div id="meta" class="guide-meta-row"></div>
+
+            <div class="guide-details-grid">
+              <section class="guide-detail-block">
+                <h2 class="guide-detail-title">Языки</h2>
+                <div id="languages" class="guide-pills"></div>
+              </section>
+              <section class="guide-detail-block">
+                <h2 class="guide-detail-title">Районы и маршруты</h2>
+                <div id="areas" class="guide-pills"></div>
+              </section>
+              <section class="guide-detail-block">
+                <h2 class="guide-detail-title">Форматы</h2>
+                <div id="formats" class="guide-pills"></div>
+              </section>
+              <section class="guide-detail-block">
+                <h2 class="guide-detail-title">Темы</h2>
+                <div id="specialties" class="guide-pills"></div>
+              </section>
+            </div>
+
+            <section class="guide-contact-section">
+              <h2 class="guide-detail-title guide-contact-heading">Как связаться</h2>
+              <div id="contact" class="guide-contact-cards"></div>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="js/guide-static.js"></script>
+  </body>
+</html>

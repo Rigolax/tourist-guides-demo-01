@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Кубачи: гиды</title>
+    <meta
+      name="description"
+      content="Гиды и экскурсии по селу Кубачи: ремёсла, мастер-классы, музеи и авторские маршруты."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#141210" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" id="siteHeader">
+      <div class="container topbar-shell">
+        <a href="#hero" class="logo logo-wordmark" aria-label="Кубачи — на главную">
+          <svg class="logo-ornament" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              d="M8 10h16M8 16h16M8 22h10M14 6l2 4-2 4-2-4 2-4zm0 12l2 4-2 4-2-4 2-4z"
+            />
+            <circle cx="24" cy="22" r="2.25" fill="none" stroke="currentColor" stroke-width="1" />
+          </svg>
+          <span class="logo-wordmark-text">Кубачи</span>
+        </a>
+
+        <nav class="nav nav-desktop" aria-label="Основное меню">
+          <a href="#hero" class="nav-link" data-section="hero">Главная</a>
+          <a href="#guides" class="nav-link" data-section="guides">Гиды</a>
+          <a href="#what-see" class="nav-link" data-section="what-see">Что посмотреть</a>
+          <a href="#masters" class="nav-link" data-section="masters">Ремесла</a>
+          <a href="#museums-map" class="nav-link" data-section="museums-map">Музеи</a>
+          <a href="#contacts" class="nav-link" data-section="contacts">Контакты</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a href="#contacts" class="topbar-quiet-link">Связаться</a>
+          <a href="#guides" class="btn btn-primary btn-header-cta">Найти гида</a>
+          <button
+            type="button"
+            class="nav-burger"
+            id="navBurger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="mobileNavPanel"
+          >
+            <span class="nav-burger-bar" aria-hidden="true"></span>
+            <span class="nav-burger-bar" aria-hidden="true"></span>
+            <span class="nav-burger-bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobileNavPanel" aria-hidden="true">
+        <nav class="mobile-nav-inner" aria-label="Мобильное меню">
+          <a href="#hero" class="nav-link nav-link--mobile" data-section="hero">Главная</a>
+          <a href="#guides" class="nav-link nav-link--mobile" data-section="guides">Гиды</a>
+          <a href="#what-see" class="nav-link nav-link--mobile" data-section="what-see">Что посмотреть</a>
+          <a href="#masters" class="nav-link nav-link--mobile" data-section="masters">Ремесла</a>
+          <a href="#museums-map" class="nav-link nav-link--mobile" data-section="museums-map">Музеи</a>
+          <a href="#contacts" class="nav-link nav-link--mobile" data-section="contacts">Контакты</a>
+          <a href="#guides" class="btn btn-primary btn-mobile-cta">Найти гида</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home" class="main">
+      <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="hero-kicker">Добро пожаловать в Кубачи</p>
+            <h1 class="hero-title">История, серебро и горы — с проводниками из Кубачи</h1>
+            <p class="hero-sub">
+              Найдите местных гидов, узнайте о достопримечательностях и забронируйте авторский маршрут по селу и
+              окрестностям.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#guides">Найти гида</a>
+              <a class="btn btn-secondary" href="#what-see">Что посмотреть</a>
+            </div>
+            <ul class="hero-chips" aria-label="Направления">
+              <li class="hero-chip">Местные гиды</li>
+              <li class="hero-chip">Мастерские</li>
+              <li class="hero-chip">История и ремесло</li>
+              <li class="hero-chip">Панорамные маршруты</li>
+            </ul>
+            <ul class="hero-trust" aria-label="Коротко о формате">
+              <li class="hero-trust__item"><span class="hero-trust__num">10+</span> локаций</li>
+              <li class="hero-trust__item">Авторские экскурсии</li>
+              <li class="hero-trust__item">Локальные мастера</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Якорь для «Главная»: прокрутка чуть ниже обложки (под фиксированную шапку) -->
+      <div id="main-below-hero" class="anchor-below-hero" aria-hidden="true"></div>
+
+      <section id="why-kubachi" class="section home-section home-section--first" aria-labelledby="why-kubachi-heading">
+        <div class="container">
+          <header class="home-section-head">
+            <p class="text-eyebrow">О селе</p>
+            <h2 id="why-kubachi-heading" class="home-section-title">Почему приезжают в Кубачи</h2>
+            <p class="home-section-lead">
+              Кубачи привлекает не только красивыми видами, но и живой историей, которую здесь можно почувствовать в старых
+              кварталах, мастерских и музейных пространствах. Это место, где ремесло, архитектура и местные традиции до сих
+              пор остаются частью повседневной жизни.
+            </p>
+          </header>
+          <div class="home-why-grid">
+            <article class="home-card">
+              <h3 class="home-card-title">Древняя история</h3>
+              <p class="home-card-text">Старые улицы, башни, каменная архитектура и память о прошлом аула.</p>
+            </article>
+            <article class="home-card">
+              <h3 class="home-card-title">Кубачинское ремесло</h3>
+              <p class="home-card-text">Знаменитое искусство серебра, орнамента и ручной работы.</p>
+            </article>
+            <article class="home-card">
+              <h3 class="home-card-title">Атмосфера горного села</h3>
+              <p class="home-card-text">Панорамы, тишина, узкие проходы и особый ритм жизни.</p>
+            </article>
+            <article class="home-card">
+              <h3 class="home-card-title">Локальный взгляд</h3>
+              <p class="home-card-text">Экскурсия с местным гидом помогает увидеть не только места, но и смысл за ними.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="guides" class="section section-guides">
+        <div class="container container-guides">
+          <header class="guides-head">
+            <p class="text-eyebrow">Локальные проводники</p>
+            <h2 class="guides-section-title">Наши местные гиды</h2>
+            <p class="guides-section-lead">
+              Выберите проводника в списке — справа откроется его программа, теги и контакты. Данные подтягиваются из
+              админки.
+            </p>
+          </header>
+
+          <div class="guides-platform">
+            <aside class="guides-platform__sidebar" aria-label="Список гидов">
+              <div id="guidesList" class="guides-picker-list"></div>
+            </aside>
+            <div class="guides-platform__detail">
+              <div id="guideDetailRoot" class="guide-detail-root"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ready-routes" class="section home-section" aria-labelledby="ready-routes-heading">
+        <div class="container">
+          <header class="home-section-head">
+            <p class="text-eyebrow">Форматы</p>
+            <h2 id="ready-routes-heading" class="home-section-title">Готовые маршруты</h2>
+            <p class="home-section-lead home-section-lead--short">
+              Если вы не знаете, с чего начать, выберите один из готовых форматов прогулки.
+            </p>
+          </header>
+          <div class="home-routes-grid">
+            <article class="home-card home-route-card">
+              <h3 class="home-card-title">Знакомство с Кубачи</h3>
+              <p class="home-route-meta">2 часа</p>
+              <p class="home-card-text">
+                Подходит для первого визита: прогулка по селу, основные точки и короткое знакомство с историей.
+              </p>
+            </article>
+            <article class="home-card home-route-card">
+              <h3 class="home-card-title">Кубачи на полдня</h3>
+              <p class="home-route-meta">3–4 часа</p>
+              <p class="home-card-text">
+                Более глубокий маршрут с мастерской, музеем, старой частью села и панорамными точками.
+              </p>
+            </article>
+            <article class="home-card home-route-card">
+              <h3 class="home-card-title">Ремесло и традиции</h3>
+              <p class="home-route-meta">3 часа</p>
+              <p class="home-card-text">
+                Экскурсия для тех, кому особенно интересно серебряное дело, орнамент и работа мастеров.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-tour" class="section home-section home-section--soft" aria-labelledby="how-tour-heading">
+        <div class="container">
+          <header class="home-section-head">
+            <p class="text-eyebrow">Как это устроено</p>
+            <h2 id="how-tour-heading" class="home-section-title">Как проходит экскурсия</h2>
+          </header>
+          <ol class="home-steps">
+            <li class="home-step">
+              <span class="home-step-num" aria-hidden="true">1</span>
+              <span class="home-step-text">Вы выбираете гида или формат маршрута</span>
+            </li>
+            <li class="home-step">
+              <span class="home-step-num" aria-hidden="true">2</span>
+              <span class="home-step-text">Мы согласовываем удобное время и детали встречи</span>
+            </li>
+            <li class="home-step">
+              <span class="home-step-num" aria-hidden="true">3</span>
+              <span class="home-step-text">Гид встречает вас и проводит по выбранному маршруту</span>
+            </li>
+            <li class="home-step">
+              <span class="home-step-num" aria-hidden="true">4</span>
+              <span class="home-step-text">По пути вы знакомитесь с историей, ремеслом и важными местами села</span>
+            </li>
+            <li class="home-step">
+              <span class="home-step-num" aria-hidden="true">5</span>
+              <span class="home-step-text">При желании маршрут можно дополнить мастерской, музеем или смотровыми точками</span>
+            </li>
+          </ol>
+          <p class="home-section-foot">
+            Каждая прогулка может быть спокойной и обзорной или более насыщенной, если вам хочется глубже погрузиться в
+            историю и ремесленные традиции Кубачи.
+          </p>
+        </div>
+      </section>
+
+      <section id="for-whom" class="section home-section" aria-labelledby="for-whom-heading">
+        <div class="container">
+          <header class="home-section-head">
+            <p class="text-eyebrow">Аудитория</p>
+            <h2 id="for-whom-heading" class="home-section-title">Кому подойдёт поездка</h2>
+          </header>
+          <ul class="home-audience">
+            <li>Тем, кто впервые едет в Кубачи и хочет увидеть главное</li>
+            <li>Тем, кому интересны история, архитектура и культура Дагестана</li>
+            <li>Семьям, которым нужен спокойный и понятный маршрут</li>
+            <li>Тем, кто хочет познакомиться с кубачинским ремеслом не по фотографиям, а вживую</li>
+            <li>Любителям атмосферных прогулок и красивых видов</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="what-see" class="section section-attractions" aria-labelledby="attractions-heading">
+        <div class="container container--attractions">
+          <header class="attractions-head">
+            <h2 id="attractions-heading" class="attractions-title">Достопримечательности Кубачи</h2>
+            <p class="attractions-lead">
+              Откройте для себя богатое наследие и природную красоту древнего села
+            </p>
+          </header>
+
+          <div class="attractions-grid">
+            <a
+              class="attraction-card attraction-card--link"
+              href="attr-tower.html"
+              aria-label="Кубачинская башня — подробнее о достопримечательности"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-01-tower.png"
+                  alt="Кубачинская башня"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Кубачинская Башня</h3>
+                <p class="attraction-card-desc">Величественный символ древнего села</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="attr-quarters.html"
+              aria-label="Старинные кварталы — подробнее о достопримечательности"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-02-quarters.png"
+                  alt="Старинные кварталы"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Старинные Кварталы</h3>
+                <p class="attraction-card-desc">Лабиринты истории и архитектуры</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="attr-reliefs.html"
+              aria-label="Каменные рельефы — подробнее о достопримечательности"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-03-street.png"
+                  alt="Каменные рельефы"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Каменные Рельефы</h3>
+                <p class="attraction-card-desc">Мастерство резьбы по камню прошлого</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="attr-art.html"
+              aria-label="Искусство Кубачи — подробнее о достопримечательности"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-04-silver.png"
+                  alt="Искусство Кубачи"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Искусство Кубачи</h3>
+                <p class="attraction-card-desc">Всемирно известные серебряные изделия</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="attr-mosque.html"
+              aria-label="Джума-мечеть и источник — подробнее о достопримечательности"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-05-village.png"
+                  alt="Джума-мечеть и источник"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Джума-Мечеть и Источник</h3>
+                <p class="attraction-card-desc">Мирный уголок и духовный центр</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="attr-kala.html"
+              aria-label="Древний Кала-Корейш — подробнее о достопримечательности"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-06-kala.png"
+                  alt="Древний Кала-Корейш"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Древний Кала-Корейш</h3>
+                <p class="attraction-card-desc">Цитадель с видом на вечные горы</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="attractions-cta">
+            <a class="btn btn-primary attractions-cta__btn" href="#contacts">Запланировать маршрут</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="masters" class="section section-attractions" aria-labelledby="masters-heading">
+        <div class="container container--attractions">
+          <header class="attractions-head">
+            <h2 id="masters-heading" class="attractions-title">Ремесленные мастер-классы</h2>
+            <p class="attractions-lead">
+              Познакомьтесь с орнаментом, мастерскими и живой традицией Кубачи
+            </p>
+          </header>
+
+          <div class="attractions-grid">
+            <a
+              class="attraction-card attraction-card--link"
+              href="mc-ornament.html"
+              aria-label="Орнамент Кубачи — страница мастер-класса"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-04-silver.png"
+                  alt="Орнамент на изделиях, музейная экспозиция"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Орнамент Кубачи</h3>
+                <p class="attraction-card-desc">Знакомство с узорами и символикой местного ремесла</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="mc-silver.html"
+              aria-label="Серебро и насечка — страница мастер-класса"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-04-silver.png"
+                  alt="Серебряные изделия, детали насечки"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Серебро и насечка</h3>
+                <p class="attraction-card-desc">Красота ручной работы, линии и детали</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="mc-workshop.html"
+              aria-label="В мастерской мастера — страница мастер-класса"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-03-street.png"
+                  alt="Мастер за работой, руки и инструмент"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">В мастерской мастера</h3>
+                <p class="attraction-card-desc">Инструменты, процесс и живая атмосфера ремесла</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="mc-stone.html"
+              aria-label="Камень и узор — страница мастер-класса"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-06-kala.png"
+                  alt="Каменная архитектура аула, детали"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Камень и узор</h3>
+                <p class="attraction-card-desc">Связь старого аула и художественного языка Кубачи</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="mc-history.html"
+              aria-label="История ремесла — страница мастер-класса"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-02-quarters.png"
+                  alt="Ремесленная мастерская, традиции"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">История ремесла</h3>
+                <p class="attraction-card-desc">Мастера, традиции и культурная память села</p>
+              </div>
+            </a>
+
+            <a
+              class="attraction-card attraction-card--link"
+              href="mc-family.html"
+              aria-label="Семейный формат — страница мастер-класса"
+            >
+              <div class="attraction-card-media">
+                <img
+                  class="attraction-card-img"
+                  src="assets/kubachi-attr-05-village.png"
+                  alt="Вид на Кубачи, спокойная атмосфера села"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="attraction-card-body">
+                <h3 class="attraction-card-title">Семейный формат</h3>
+                <p class="attraction-card-desc">Спокойное знакомство для гостей с детьми</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="attractions-cta">
+            <a class="btn btn-primary attractions-cta__btn" href="#contacts">Подобрать мастер-класс</a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="museums-map"
+        class="section section-museums-map"
+        aria-labelledby="museums-map-heading"
+        data-yandex-api-key=""
+      >
+        <div class="container">
+          <header class="museums-map-head">
+            <p class="text-eyebrow museums-map-eyebrow">Культура и память</p>
+            <h2 id="museums-map-heading" class="museums-map-title">Музеи на карте</h2>
+            <p class="museums-map-sub">
+              Три музейные точки села Кубачи — на интерактивной карте Яндекса. Выберите место слева, чтобы сфокусировать
+              карту и открыть подсказку; клик по метке подсветит карточку в списке.
+            </p>
+          </header>
+
+          <div class="museums-map-layout">
+            <ul class="museums-map-list" role="list">
+              <li class="museums-map-list-item">
+                <article
+                  class="museums-map-card"
+                  data-museum-id="kombinat"
+                  data-lon="47.6119"
+                  data-lat="42.0881"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Показать на карте: Кубачинский художественный комбинат"
+                >
+                  <h3 class="museums-map-card-title">Кубачинский художественный комбинат</h3>
+                  <p class="museums-map-card-desc">
+                    Экспозиция и продукция художественных промыслов: знакомство с наследием серебряного дела и
+                    декоративно-прикладного искусства Кубачи.
+                  </p>
+                  <p class="museums-map-card-address">село Кубачи, ул. Юсупа Ахмедова, 94</p>
+                  <div class="museums-map-card-actions">
+                    <span class="museums-map-card-pill">На карте</span>
+                    <a
+                      class="museums-map-card-link"
+                      href="https://yandex.ru/maps/?text=%D0%9A%D1%83%D0%B1%D0%B0%D1%87%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%85%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%82%20%D0%9A%D1%83%D0%B1%D0%B0%D1%87%D0%B8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Яндекс.Карты</a
+                    >
+                  </div>
+                </article>
+              </li>
+              <li class="museums-map-list-item">
+                <article
+                  class="museums-map-card"
+                  data-museum-id="memorial"
+                  data-lon="47.6152"
+                  data-lat="42.0904"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Показать на карте: Мемориальный музей Ахмедхана Абу-Бакара"
+                >
+                  <h3 class="museums-map-card-title">Мемориальный музей Ахмедхана Абу-Бакара</h3>
+                  <p class="museums-map-card-desc">
+                    Музей, посвящённый жизни и творчеству выдающегося дагестанского поэта и общественного деятеля.
+                  </p>
+                  <p class="museums-map-card-address">село Кубачи, ул. Юсупа Шамова, 48</p>
+                  <div class="museums-map-card-actions">
+                    <span class="museums-map-card-pill">На карте</span>
+                    <a
+                      class="museums-map-card-link"
+                      href="https://yandex.ru/maps/?text=%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BC%D1%83%D0%B7%D0%B5%D0%B9%20%D0%90%D1%85%D0%BC%D0%B5%D0%B4%D1%85%D0%B0%D0%BD%D0%B0%20%D0%90%D0%B1%D1%83-%D0%91%D0%B0%D0%BA%D0%B0%D1%80%D0%B0%20%D0%9A%D1%83%D0%B1%D0%B0%D1%87%D0%B8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Яндекс.Карты</a
+                    >
+                  </div>
+                </article>
+              </li>
+              <li class="museums-map-list-item">
+                <article
+                  class="museums-map-card"
+                  data-museum-id="branch"
+                  data-lon="47.6124"
+                  data-lat="42.0895"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Показать на карте: Дом-музей им. А. Абу-Бакара"
+                >
+                  <h3 class="museums-map-card-title">Дом-музей им. А.&nbsp;Абу-Бакара</h3>
+                  <p class="museums-map-card-desc">
+                    Филиал Национального музея Республики Дагестан: мемориальная экспозиция в домашней обстановке аула.
+                  </p>
+                  <p class="museums-map-card-address">село Кубачи, ул. Юсупа Ахмедова</p>
+                  <div class="museums-map-card-actions">
+                    <span class="museums-map-card-pill">На карте</span>
+                    <a
+                      class="museums-map-card-link"
+                      href="https://yandex.ru/maps/?text=%D0%94%D0%BE%D0%BC-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9%20%D0%90%D0%B1%D1%83-%D0%91%D0%B0%D0%BA%D0%B0%D1%80%D0%B0%20%D0%9A%D1%83%D0%B1%D0%B0%D1%87%D0%B8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Яндекс.Карты</a
+                    >
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <div class="museums-map-mapwrap">
+              <div id="museumYandexMap" class="museums-map-canvas" role="region" aria-label="Карта музеев Кубачи"></div>
+              <p id="museumMapHint" class="museums-map-hint muted" hidden>
+                Чтобы карта реагировала на список слева, добавьте ключ JavaScript API Яндекс.Карт в переменную окружения
+                <code>YANDEX_MAPS_API_KEY</code> или в атрибут <code>data-yandex-api-key</code> у секции.
+              </p>
+            </div>
+          </div>
+
+          <p class="museums-map-foot muted">
+            Список соответствует категории «Музеи» в
+            <a
+              href="https://yandex.com/maps/177978/selo-kubachi-rural-settlement/category/museum/184105894/?ll=47.613105%2C42.089190&z=15"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Яндекс.Картах по селу Кубачи</a
+            >. Режим работы и билеты уточняйте у учреждений.
+          </p>
+        </div>
+      </section>
+
+      <section id="blog" class="section">
+        <div class="container">
+          <div class="section-title">БЛОГ (ПРИМЕР)</div>
+          <div class="tileGrid tileGrid-3">
+            <div class="tile tilePlain">
+              <div class="tileBody">
+                <div class="tileTitle">Что взять с собой?</div>
+                <div class="tileSub muted">Короткая памятка от гидов</div>
+              </div>
+            </div>
+            <div class="tile tilePlain">
+              <div class="tileBody">
+                <div class="tileTitle">Топ-5 локаций для фото</div>
+                <div class="tileSub muted">Маршрут и время посещения</div>
+              </div>
+            </div>
+            <div class="tile tilePlain">
+              <div class="tileBody">
+                <div class="tileTitle">Ремесло: как это устроено</div>
+                <div class="tileSub muted">Коротко о процессе и смысле</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section section-alt home-section home-section--faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <header class="home-section-head home-section-head--faq">
+            <p class="text-eyebrow">Вопросы</p>
+            <h2 id="faq-heading" class="home-section-title">Частые вопросы</h2>
+          </header>
+          <div class="home-faq-list">
+            <details class="home-faq-item">
+              <summary class="home-faq-q">Сколько длится экскурсия?</summary>
+              <p class="home-faq-a">Обычно от 2 до 4 часов, в зависимости от маршрута и ваших пожеланий.</p>
+            </details>
+            <details class="home-faq-item">
+              <summary class="home-faq-q">Можно ли выбрать маршрут под себя?</summary>
+              <p class="home-faq-a">
+                Да, прогулку можно адаптировать под интерес к истории, ремеслу, панорамным видам или семейному формату.
+              </p>
+            </details>
+            <details class="home-faq-item">
+              <summary class="home-faq-q">Подойдёт ли экскурсия для первого визита?</summary>
+              <p class="home-faq-a">Да, сайт как раз рассчитан на то, чтобы помочь выбрать понятный стартовый маршрут.</p>
+            </details>
+            <details class="home-faq-item">
+              <summary class="home-faq-q">Можно ли приехать с детьми?</summary>
+              <p class="home-faq-a">Да, для семей лучше выбрать более спокойный и короткий формат прогулки.</p>
+            </details>
+            <details class="home-faq-item">
+              <summary class="home-faq-q">Нужно ли записываться заранее?</summary>
+              <p class="home-faq-a">Лучше связаться заранее, чтобы согласовать время и формат экскурсии.</p>
+            </details>
+            <details class="home-faq-item">
+              <summary class="home-faq-q">Будут ли мастерские или музеи в маршруте?</summary>
+              <p class="home-faq-a">
+                Это зависит от выбранного гида и программы, но такие точки можно включить в маршрут.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="contacts" class="site-footer" aria-labelledby="footer-contacts-title">
+      <div class="site-footer-accent" aria-hidden="true"></div>
+      <div class="container site-footer-inner">
+        <div class="site-footer-main">
+          <div class="site-footer-intro">
+            <a href="index.html" class="site-footer-brand" aria-label="Кубачи — на главную">
+              <span class="site-footer-brand-text">КУБАЧИ</span>
+            </a>
+            <p class="site-footer-lead">
+              Гиды и экскурсии по селу. Забронируйте маршрут или задайте вопрос — ответим в удобном для вас формате.
+            </p>
+          </div>
+
+          <div class="site-footer-columns">
+            <div class="site-footer-col">
+              <h2 id="footer-contacts-title" class="site-footer-heading">Контакты</h2>
+              <ul class="site-footer-list">
+                <li class="site-footer-item">
+                  <span class="site-footer-label">Адрес</span>
+                  <span class="site-footer-value">Республика Дагестан, село Кубачи</span>
+                </li>
+                <li class="site-footer-item">
+                  <span class="site-footer-label">Вопросы по экскурсиям</span>
+                  <a class="site-footer-link-strong" href="tel:+79000000000">+7 (900) 000-00-00</a>
+                </li>
+                <li class="site-footer-item">
+                  <span class="site-footer-label">Для гидов и партнёров</span>
+                  <a class="site-footer-link-strong" href="tel:+79000000001">+7 (900) 000-00-01</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="site-footer-col">
+              <h2 class="site-footer-heading">Связь</h2>
+              <ul class="site-footer-list">
+                <li class="site-footer-item">
+                  <span class="site-footer-label">Email</span>
+                  <a class="site-footer-link" href="mailto:info@kubachi.example">info@kubachi.example</a>
+                </li>
+                <li class="site-footer-item">
+                  <span class="site-footer-label">Telegram</span>
+                  <a
+                    class="site-footer-link"
+                    href="https://t.me/kubachi_guides"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@kubachi_guides</a
+                  >
+                </li>
+                <li class="site-footer-item">
+                  <span class="site-footer-label">Ответ по почте</span>
+                  <span class="site-footer-value site-footer-value--soft">В течение 1–2 рабочих дней</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="site-footer-col site-footer-col--cta">
+              <h2 class="site-footer-heading">Подобрать гида</h2>
+              <p class="site-footer-cta-text">
+                Выберите проводника в списке или напишите нам — предложим варианты под ваши интересы.
+              </p>
+              <div class="site-footer-actions">
+                <a class="site-footer-btn site-footer-btn--primary" href="#guides">К списку гидов</a>
+                <a class="site-footer-btn site-footer-btn--outline" href="mailto:info@kubachi.example"
+                  >Написать письмо</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer-bottom">
+          <p class="site-footer-copy">© <span id="footer-year"></span> Кубачи. Туристические гиды.</p>
+          <p class="site-footer-disclaimer">
+            Материалы сайта носят информационный характер. Уточняйте детали туров напрямую у гидов.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/museums-map.js"></script>
+    <script src="js/index-static.js"></script>
+  </body>
+</html>
+

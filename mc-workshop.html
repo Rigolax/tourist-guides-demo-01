@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>В мастерской мастера — Кубачи</title>
+    <meta name="description" content="Инструменты, процесс и атмосфера кубачинской мастерской." />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#141210" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-mc-detail">
+    <header class="topbar" id="siteHeader">
+      <div class="container topbar-shell">
+        <a href="index.html" class="logo logo-wordmark" aria-label="Кубачи — на главную">
+          <svg class="logo-ornament" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              d="M8 10h16M8 16h16M8 22h10M14 6l2 4-2 4-2-4 2-4zm0 12l2 4-2 4-2-4 2-4z"
+            />
+            <circle cx="24" cy="22" r="2.25" fill="none" stroke="currentColor" stroke-width="1" />
+          </svg>
+          <span class="logo-wordmark-text">Кубачи</span>
+        </a>
+        <nav class="nav nav-desktop" aria-label="Основное меню">
+          <a href="index.html#hero" class="nav-link">Главная</a>
+          <a href="index.html#guides" class="nav-link">Гиды</a>
+          <a href="index.html#what-see" class="nav-link">Что посмотреть</a>
+          <a href="index.html#masters" class="nav-link">Ремесла</a>
+          <a href="index.html#museums-map" class="nav-link">Музеи</a>
+          <a href="index.html#contacts" class="nav-link">Контакты</a>
+        </nav>
+        <div class="topbar-actions">
+          <a href="index.html#contacts" class="topbar-quiet-link">Связаться</a>
+          <a href="index.html#guides" class="btn btn-primary btn-header-cta">Найти гида</a>
+          <button type="button" class="nav-burger" id="navBurger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNavPanel">
+            <span class="nav-burger-bar" aria-hidden="true"></span>
+            <span class="nav-burger-bar" aria-hidden="true"></span>
+            <span class="nav-burger-bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav" id="mobileNavPanel" aria-hidden="true">
+        <nav class="mobile-nav-inner" aria-label="Мобильное меню">
+          <a href="index.html#hero" class="nav-link nav-link--mobile">Главная</a>
+          <a href="index.html#guides" class="nav-link nav-link--mobile">Гиды</a>
+          <a href="index.html#what-see" class="nav-link nav-link--mobile">Что посмотреть</a>
+          <a href="index.html#masters" class="nav-link nav-link--mobile">Ремесла</a>
+          <a href="index.html#museums-map" class="nav-link nav-link--mobile">Музеи</a>
+          <a href="index.html#contacts" class="nav-link nav-link--mobile">Контакты</a>
+          <a href="index.html#guides" class="btn btn-primary btn-mobile-cta">Найти гида</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main main--subpage">
+      <div class="container mc-detail-wrap">
+        <a class="mc-detail-back" href="index.html#masters-heading">← К мастер-классам</a>
+        <figure class="mc-detail-cover">
+          <img
+            src="assets/kubachi-attr-03-street.png"
+            alt="Мастер за работой"
+            width="1200"
+            height="675"
+          />
+        </figure>
+        <h1 class="mc-detail-h1">В мастерской мастера</h1>
+        <p class="mc-detail-lead">Инструменты, процесс и живая атмосфера ремесла</p>
+        <p class="mc-detail-p">
+          Показ рабочего места, инструментов и этапов без спешки: больше наблюдения и диалога, чем «лекции на
+          отвлежённую тему».
+        </p>
+        <p class="mc-detail-p">Время и мастер согласуются заранее — напишите или позвоните, чтобы мы предложили слот.</p>
+        <div class="mc-detail-actions">
+          <a class="btn btn-primary" href="index.html#contacts">Подобрать мастер-класс</a>
+          <a class="btn btn-secondary" href="index.html#guides">Найти гида</a>
+        </div>
+      </div>
+    </main>
+    <script src="js/subpage-nav.js"></script>
+  </body>
+</html>
