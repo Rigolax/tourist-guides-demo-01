@@ -74,13 +74,43 @@
     <main class="main main--subpage">
       <div class="container mc-detail-wrap">
         <a class="mc-detail-back" href="index.html#attractions-heading">← К достопримечательностям</a>
-        <figure class="mc-detail-cover">
-          <img
-            src="assets/kubachi-attr-02-quarters.png"
-            alt="Старинные кварталы Кубачи"
-            width="1200"
-            height="675"
-          />
+        <figure
+          class="mc-detail-cover quarters-gallery"
+          id="quartersGallery"
+          role="group"
+          aria-roledescription="карусель"
+          aria-label="Галерея: старинные кварталы"
+          tabindex="0"
+        >
+          <div class="quarters-gallery__viewport">
+            <img
+              class="quarters-gallery__img"
+              src="assets/kubachi-attr-02-quarters.png"
+              alt="Старинные кварталы Кубачи, исторический вид"
+              width="1200"
+              height="675"
+              decoding="async"
+            />
+          </div>
+          <button
+            type="button"
+            class="quarters-gallery__nav quarters-gallery__nav--prev"
+            aria-label="Предыдущее фото"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="quarters-gallery__nav quarters-gallery__nav--next"
+            aria-label="Следующее фото"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="quarters-gallery__dots" aria-label="Номер слайда"></div>
         </figure>
         <h1 class="mc-detail-h1">Старинные кварталы</h1>
         <p class="mc-detail-lead">Лабиринты истории и архитектуры</p>
@@ -98,5 +128,6 @@
       </div>
     </main>
     <script src="js/subpage-nav.js"></script>
+    <script src="js/attr-quarters-gallery.js"></script>
   </body>
 </html>
