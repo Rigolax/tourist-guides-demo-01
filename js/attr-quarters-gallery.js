@@ -1,15 +1,47 @@
 /**
- * Галерея «Старинные кварталы»: положите файлы в assets/ или assets/images/old-quarters/
- * и добавьте объекты { src, alt } в массив (путь как в обычной ссылке с этой страницы).
+ * Галерея «Старинные кварталы»: фото в assets/old-quarters/old-quarters-*.jpg
  */
 const oldQuartersImages = [
   {
     src: "assets/kubachi-attr-02-quarters.png",
-    alt: "Старинные кварталы Кубачи, исторический вид",
+    alt: "Старинные кварталы Кубачи — террасная застройка на склоне горы",
   },
-  // Раскомментируйте и подставьте свои файлы:
-  // { src: "assets/images/old-quarters/photo-02.jpg", alt: "Кубачи, XIX век" },
-  // { src: "assets/images/old-quarters/photo-03.jpg", alt: "Вид на башню" },
+  {
+    src: "assets/old-quarters/old-quarters-01.jpg",
+    alt: "Кубачи, конец XIX века — панорама исторического аула",
+  },
+  {
+    src: "assets/old-quarters/old-quarters-02.jpg",
+    alt: "Каменная башня в старой части села, архивный снимок",
+  },
+  {
+    src: "assets/old-quarters/old-quarters-03.jpg",
+    alt: "Панорама села на склоне с башней на вершине холма",
+  },
+  {
+    src: "assets/old-quarters/old-quarters-04.jpg",
+    alt: "Быт и архитектура Кубачи, архивная фотография",
+  },
+  {
+    src: "assets/old-quarters/old-quarters-05.jpg",
+    alt: "Кубачи в 1861 году — исторический рисунок (литография)",
+  },
+  {
+    src: "assets/old-quarters/old-quarters-06.jpg",
+    alt: "Исторический вид горного аула Кубачи",
+  },
+  {
+    src: "assets/old-quarters/old-quarters-07.jpg",
+    alt: "Старинные кварталы — панорамный архивный вид",
+  },
+  {
+    src: "assets/old-quarters/old-quarters-08.jpg",
+    alt: "Вид на террасные кварталы и каменную застройку",
+  },
+  {
+    src: "assets/old-quarters/old-quarters-09.jpg",
+    alt: "Каменные дома и улицы старинных кварталов, архивный снимок",
+  },
 ];
 
 (function initQuartersGallery() {
